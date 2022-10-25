@@ -45,34 +45,29 @@ function ConcertForm({addConcert}){
                     name="name"
                     
                 />
-                <br/>
                 <label className="inputTitles">Date:</label>
                 <input 
                     className="submitAreas"
-                    value = {date} 
                     onChange={(e) => setDate(e.target.value)} 
-                    type="date" 
-                    label="date"
+                    name="date"
+                    type="date"
                 />
-                <br/>
                 <label className="inputTitles">Location:</label>
                 <input 
                     className="submitAreas"
                     value = {location} 
                     onChange={(e) => setLocation(e.target.value)} 
-                    placeholder="EX. Dead & Company"
+                    placeholder="Ex. Dead & Company"
                     name="name"
                 />
-                <br/>
                 <label className="inputTitles">Venue:</label>
                 <input 
                     className="submitAreas"
                     value = {venue} 
                     onChange={(e) => setVenue(e.target.value)} 
-                    placeholder="EX. Dead & Company"
+                    placeholder="Ex. Folsom Field"
                     name="name"
                 />
-                <br/>
                 <label className="inputTitles">Rating:</label>
                 <input 
                     value = {rating} 
@@ -83,24 +78,22 @@ function ConcertForm({addConcert}){
                     placeholder="Ex. 9.5, 8.3"
                     step="0.1" 
                 />
-                <br/>
                 <label className="inputTitles">Concert Poster:</label>
                 <input
                     value = {poster}
                     className="submitAreas"
                     onChange={(e) => setPoster(e.target.value)}
                     label="Front Image URL"
-                    placeholder="url"
+                    placeholder="Ex. https://marqspusta.com/...."
                     name="frontUrl"
                 />
-                <br/>
                 <label className="inputTitles">Picture From The Show:</label>
                 <input
                     value={liveImage}
                     className="submitAreas"
                     onChange={(e) => setLiveImage(e.target.value)}
                     label="Back Image URL"
-                    placeholder="url"
+                    placeholder="Ex. https://marqspusta.com/...."
                     name="backUrl"
                 />
                 <br/>

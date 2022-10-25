@@ -30,7 +30,7 @@ nav a.active {
 }
 
 .uiForm {
-  border: 2px solid red;
+  border: 2px solid black;
   text-align: center;
   padding: 1rem;
   width: 15rem;
@@ -40,7 +40,6 @@ nav a.active {
 }
 
 .submitAreas{
-  border: 2px solid red;
+  border: 1px solid black;
   border-radius: 4px;
-
 }

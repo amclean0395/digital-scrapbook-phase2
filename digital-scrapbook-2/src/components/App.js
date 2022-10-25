@@ -13,18 +13,25 @@ function App() {
   const [searchBoxValue, setSearchBoxValue] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:3001/concerts')
+    fetch('http://localhost:3001/concerts/')
     .then((r) => r.json())
     .then((oneConcert)=> setConcerts(oneConcert))
   }, [])
 
   const displayedConcerts = concerts.filter((oneConcert) => 
-    oneConcert.name.toLowerCase().includes(searchBoxValue.toLowerCase())
+    oneConcert.date.toLowerCase().includes(searchBoxValue.toLowerCase())
   )
+  //putting in name breaks it??????????
 
   function addConcert(newConcert){
     const updatedConcertArray = [...concerts, newConcert]
     setConcerts(updatedConcertArray)
+  }
+
+  function handleDelete(id) {
+    const newConcertList = concerts.filter((oneConcert) => 
+    oneConcert.id !== id)
+    setConcerts(newConcertList)
   }
 
   return (
@@ -32,7 +39,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/ConcertForm" element={<ConcertForm addConcert={addConcert}/>}/>
-          <Route path="/ConcertList" element={<ConcertList searchBoxValue={searchBoxValue} setSearchBoxValue={setSearchBoxValue} concerts={displayedConcerts}/>}/>
+          <Route path="/ConcertList" element={<ConcertList handleDelete={handleDelete}
+          searchBoxValue={searchBoxValue} setSearchBoxValue={setSearchBoxValue} concerts={displayedConcerts}/>}/>
           <Route path="/" element={<Home />}/>
         </Routes>
     </div>

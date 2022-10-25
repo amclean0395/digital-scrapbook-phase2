@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ConcertCard({name, location, venue, date, rating, picture}){
+function ConcertCard({id, name, location, venue, date, rating, picture, handleDelete}){
 
     const [shownImage, setShownImage] = useState(true)
     const [starColor, setStarColor] = useState(true)
@@ -11,6 +11,13 @@ function ConcertCard({name, location, venue, date, rating, picture}){
 
     function handleFavorite(){
         setStarColor((starColor) => !starColor)
+    }
+
+    function handleDeleteShow(){
+        fetch(`http://localhost:3001/concerts/${id}`, {
+            method: "DELETE",
+        })
+        handleDelete(id)
     }
 
     return(
@@ -29,6 +36,7 @@ function ConcertCard({name, location, venue, date, rating, picture}){
             <h4>{rating}</h4>
             <button className = {starColor ? "emoji-button favorite active" : "emoji-button favorite"}
             onClick={handleFavorite}> {starColor ? "★" :"☆"} </button>
+            <button onClick={handleDeleteShow}>Delete</button>
         </li>
     )
 }

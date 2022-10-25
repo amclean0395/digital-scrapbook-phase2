@@ -8,7 +8,7 @@
       "Venue": "Folsom Field",
       "rating": "9.2",
       "picture": {
-        "poster": "http://cdn1.bakerprints.com/kwb/wp-content/uploads/1999/01/deadco-noblesville-poster-2018-main.jpg",
+        "poster": "",
         "liveImage": ""
       },
       "set-list": {
@@ -27,7 +27,7 @@
       "Venue": "Folsom Field",
       "rating": "7.6",
       "picture": {
-        "poster": "https://marqspusta.com/wp-content/gallery/deadcohollywood/Screen-Shot-2021-10-26-at-1.13.22-PM.png",
+        "poster": "",
         "liveImage": ""
       },
       "set-list": {
@@ -37,6 +37,15 @@
         "song4": "Little Red Rooster",
         "song5": "Terrapin Station"
       }
+    },
+    {
+      "date": "",
+      "rating": 3.4,
+      "picture": {
+        "poster": "67",
+        "liveImage": "677"
+      },
+      "id": 3
     }
   ]
 }

@@ -7,6 +7,7 @@ function ConcertList({concerts, searchBoxValue, setSearchBoxValue}){
     const concertCard = concerts.map((oneConcert) => (
         <ConcertCard 
             key={oneConcert.id}
+            id = {oneConcert.id}
             name = {oneConcert.name}
             date = {oneConcert.date}
             rating={oneConcert.rating}
