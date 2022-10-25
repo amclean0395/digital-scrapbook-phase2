@@ -8,7 +8,7 @@ function Search({searchBoxValue, setSearchBoxValue}){
                 placeholder="Search any Song"
                 value={(searchBoxValue)}
                 onChange={(e) => setSearchBoxValue(e.target.value)}
-            />    
+            />  
         </div>    
     )
 }

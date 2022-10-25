@@ -19,7 +19,7 @@ function App() {
   }, [])
 
   const displayedConcerts = concerts.filter((oneConcert) => 
-    oneConcert.description.toLowerCase().includes(searchBoxValue.toLowerCase())
+    oneConcert.name.toLowerCase().includes(searchBoxValue.toLowerCase())
   )
 
   function addConcert(newConcert){

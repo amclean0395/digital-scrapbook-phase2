@@ -1,38 +1,42 @@
 {
-    "concerts": [
-
-      {
-        "id": 1,
-        "date": "August 15th, 2022",
-        "rating": "7.6",
-        "picture": {
-          "poster": "",
-          "liveImage": ""
-        },
-        "set-list": {
-            "song1":"Bertha",
-            "song2":"Dark Star",
-            "song3":"Cold Rain and Snow",
-            "song4":"Tennessee Jed",
-            "song5":"I know you rider"
-        }
+  "concerts": [
+    {
+      "id": 1,
+      "name": "Dead & Company",
+      "date": "August 15th, 2022",
+      "location": "Boulder, CO",
+      "Venue": "Folsom Field",
+      "rating": "9.2",
+      "picture": {
+        "poster": "http://cdn1.bakerprints.com/kwb/wp-content/uploads/1999/01/deadco-noblesville-poster-2018-main.jpg",
+        "liveImage": ""
       },
-      {
-        "id": 2,
-        "date": "August 15th, 2022",
-        "rating": "7.6",
-        "picture": {
-          "poster": "",
-          "liveImage": ""
-        },
-        "set-list": {
-            "song1":"Gomorrah",
-            "song2":"Ramble on Rose",
-            "song3":"Jack Straw",
-            "song4":"Little Red Rooster",
-            "song5":"Terrapin Station"
-        }
-      }       
-        
-    ]
-}    
+      "set-list": {
+        "song1": "Bertha",
+        "song2": "Dark Star",
+        "song3": "Cold Rain and Snow",
+        "song4": "Tennessee Jed",
+        "song5": "I know you rider"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Dead & Company",
+      "date": "August 15th, 2022",
+      "location": "Boulder, CO",
+      "Venue": "Folsom Field",
+      "rating": "7.6",
+      "picture": {
+        "poster": "https://marqspusta.com/wp-content/gallery/deadcohollywood/Screen-Shot-2021-10-26-at-1.13.22-PM.png",
+        "liveImage": ""
+      },
+      "set-list": {
+        "song1": "Gomorrah",
+        "song2": "Ramble on Rose",
+        "song3": "Jack Straw",
+        "song4": "Little Red Rooster",
+        "song5": "Terrapin Station"
+      }
+    }
+  ]
+}

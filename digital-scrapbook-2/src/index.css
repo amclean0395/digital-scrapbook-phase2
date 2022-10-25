@@ -16,3 +16,31 @@ nav a.active {
   background-color: black;
   color: white
 }
+
+
+.cards {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 5px 5px #e04b52;
+}
+
+.uiForm {
+  border: 2px solid red;
+  text-align: center;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+}
+
+.submitAreas{
+  border: 2px solid red;
+  border-radius: 4px;
+
+}
