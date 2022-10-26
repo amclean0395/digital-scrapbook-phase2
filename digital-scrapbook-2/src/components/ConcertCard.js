@@ -1,16 +1,12 @@
 import React, { useState } from "react";
+import {NavLink} from "react-router-dom"
 
 function ConcertCard({id, name, location, venue, date, rating, picture, handleDelete}){
 
     const [shownImage, setShownImage] = useState(true)
-    const [starColor, setStarColor] = useState(true)
 
-    function handlePictureSide(){
-        setShownImage((shownImage) => !shownImage)
-    }
-
-    function handleFavorite(){
-        setStarColor((starColor) => !starColor)
+    function handleFlip(){
+        setShownImage((shownContent) => !shownContent)
     }
 
     function handleDeleteShow(){
@@ -21,23 +17,22 @@ function ConcertCard({id, name, location, venue, date, rating, picture, handleDe
     }
 
     return(
-        <li className="cards">
+        <div className="cards">
             <h2>{name}</h2>
             <div className="image">
                 {shownImage ? (
-                    <img className = "poster" onClick={handlePictureSide} src={picture.poster} alt="OH NO!" />
+                    <img className = "poster" onClick={handleFlip} src={picture.poster} alt="Error Loading Media" />
                 ) : (
-                    <img className= "poster" onClick={handlePictureSide} src={picture.liveImage} alt="oh no!" />
+                    <img className = "crowd" onClick={handleFlip} src={picture.liveImage} alt="Error Loading Media"/>
                 )}
             </div>
-            <p className="locationText">{location}</p>
-            <p className="locationText">{venue}</p>
-            <p className="locationText">{date}</p>
-            <p className="locationText">{rating}</p>
-            <button className = {starColor ? "emoji-button favorite active" : "emoji-button favorite"}
-            onClick={handleFavorite}> {starColor ? "★" :"☆"} </button>
-            <button className="deleteButton" onClick={handleDeleteShow}>Delete</button>
-        </li>
+            <p className="cardText">Location: {location}</p>
+            <p className="cardText">Venue: {venue}</p>
+            <p className="cardText">Date: {date}</p>
+            <p className="cardText">Rating: {rating}</p>
+            <button className="deleteButton" onClick={handleDeleteShow}>Remove Show</button>
+            <NavLink to={`/ConcertList/${id}`} >View Set-list</NavLink>
+        </div>
     )
 }
 

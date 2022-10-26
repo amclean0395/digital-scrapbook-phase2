@@ -3,6 +3,7 @@ import ConcertList from './ConcertList';
 import ConcertForm from './ConcertForm';
 import Home from './Home'
 import Header from './Header'
+import SetList from './SetList';
 import {Routes, Route} from "react-router-dom"
 
 
@@ -54,6 +55,7 @@ function App() {
           searchBoxValue={searchBoxValue} setSearchBoxValue={setSearchBoxValue} concerts={displayedConcerts}
           concert={concerts} setConcerts={setConcerts}/>}/>
           <Route path="/" element={<Home />}/>
+          <Route path="/ConcertList/:id" element={<SetList />}/>
         </Routes>
     </div>
   );

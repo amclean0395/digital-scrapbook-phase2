@@ -5,10 +5,10 @@
       "name": "Dead & Company",
       "date": "November 24th, 2015",
       "location": "Broomfield, CO",
-      "venue": "1st Bank Center",
+      "Venue": "1st Bank Center",
       "rating": "8.7",
       "picture": {
-        "poster": "https://i0.wp.com/www.deadheadland.com/wp-content/uploads/2015/11/deadco-broomfield-1.jpg?resize=553%2C800&ssl=1",
+        "poster": "",
         "liveImage": ""
       },
       "set": {
@@ -28,10 +28,7 @@
         "song14": "Drums & Space",
         "song15": "Black Peter",
         "song16": "Good Lovin'",
-        "song17": "Touch of Grey",
-        "song18": "",
-        "song19": "",
-        "song20": ""
+        "song17": "Touch of Grey"       
       }
     },
     {
@@ -43,7 +40,7 @@
       "rating": "9.5",
       "picture": {
         "poster": "https://cdn.shopify.com/s/files/1/0064/6532/3073/products/DeadCoBoulder18Jul22_1024x1024@2x.jpg?v=1658538528",
-        "liveImage": ""
+        "liveImage": "https://i.pinimg.com/originals/a7/fd/21/a7fd21bf8514a02f140b0c04b4ff0e3a.jpg"
       },
       "set": {
         "song1": "Bertha",
@@ -77,7 +74,7 @@
       "rating": "8.2",
       "picture": {
         "poster": "https://preview.redd.it/bcpcl8fojs911.jpg?width=640&crop=smart&auto=webp&s=bf27ca2f127057810ab3ec9662ddc23548b56c0d",
-        "liveImage": ""
+        "liveImage": "https://archive.org/download/dc2022-06-18/thumbnail.jpg"
       },
       "set": {
         "song1": "Iko Iko",
@@ -111,7 +108,7 @@
       "rating": "8.7",
       "picture": {
         "poster": "https://www.nugs.net/on/demandware.static/-/Sites-nugs-master/default/dw10a483c6/images/hi-res/deadco180714_01.jpg",
-        "liveImage": ""
+        "liveImage": "https://i0.wp.com/liveforlivemusic.com/wp-content/uploads/2022/06/06-18-22_DPV_9160_Dead_and_Co_Folsom_Field_Boulder_CO_by_Dave_Vann.jpg?fit=1944%2C1296&ssl=1"
       },
       "set": {
         "song1": "China Cat Sunflower",
@@ -145,7 +142,7 @@
       "rating": "6.0",
       "picture": {
         "poster": "https://assets.bigcartel.com/product_images/240910907/POST-DeadAndCompany-Boulder2019.jpg?auto=format&fit=max&h=1200&w=1200",
-        "liveImage": ""
+        "liveImage": "https://www.gratefulweb.com/sites/default/files/images/articles/37214722_10156184529759667_5632588418857828352_o.jpg"
       },
       "set": {
         "song1": "Not Fade Away",
@@ -179,7 +176,7 @@
       "rating": "6.5",
       "picture": {
         "poster": "https://cdn.shopify.com/s/files/1/0920/4880/products/image_f9f31d79-564e-4301-92f2-0d3c9b83bfa5_1080x.jpg?v=1632505697",
-        "liveImage": ""
+        "liveImage": "https://www.nightafternight.com/.a/6a00d8341ce4c253ef0240a46a1c99200c-580wi"
       },
       "set": {
         "song1": "Good Times",
@@ -213,7 +210,7 @@
       "rating": "8.1",
       "picture": {
         "poster": "https://i.ebayimg.com/images/g/TFIAAOSwunhhKwQF/s-l500.jpg",
-        "liveImage": ""
+        "liveImage": "https://www.pennlive.com/resizer/nGU0ZpnOdrNXDAIOLDt9PNbTZEk=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/6X56PB47PJFKTFGRVZXSZCC4EY.jpg"
       },
       "set": {
         "song1": "The Music Never Stopped",
@@ -247,7 +244,7 @@
       "rating": "8.9",
       "picture": {
         "poster": "https://i.ebayimg.com/images/g/awAAAOSwkCNhc7q~/s-l400.jpg",
-        "liveImage": ""
+        "liveImage": "https://i0.wp.com/liveforlivemusic.com/wp-content/uploads/2021/10/102221_Dead-_-Co._Fiddlers-Green_Rios-26.jpg?fit=2048%2C1365&ssl=1"
       },
       "set": {
         "song1": "Good Times",
@@ -281,7 +278,7 @@
       "rating": "9.0",
       "picture": {
         "poster": "https://i.ebayimg.com/images/g/DKgAAOSwsldhjHmg/s-l500.jpg",
-        "liveImage": ""
+        "liveImage": "https://i0.wp.com/liveforlivemusic.com/wp-content/uploads/2021/10/102221_Dead-_-Co._Fiddlers-Green_Rios-4.jpg?fit=2048%2C1365&ssl=1"
       },
       "set": {
         "song1": "Iko Iko",
@@ -315,7 +312,7 @@
       "rating": "8.9",
       "picture": {
         "poster": "https://posterdrops-images.s3.amazonaws.com/art_images/288811863_10229034752879357_5153536620411733993_n_1655488396.jpg",
-        "liveImage": ""
+        "liveImage": "https://i0.wp.com/liveforlivemusic.com/wp-content/uploads/2022/06/06-18-22_DPV_9160_Dead_and_Co_Folsom_Field_Boulder_CO_by_Dave_Vann.jpg?fit=1944%2C1296&ssl=1"
       },
       "set": {
         "song1": "Bertha",
@@ -349,7 +346,7 @@
       "rating": "9.3",
       "picture": {
         "poster": "https://i.ebayimg.com/images/g/FHUAAOSw8Qliy44~/s-l500.jpg",
-        "liveImage": ""
+        "liveImage": "https://i0.wp.com/inspiredimperfection.com/wp-content/uploads/2018/07/oteil-burdridge-dead-and-company-july-13-2018.jpg?ssl=1"
       },
       "set": {
         "song1": "China Cat Sunflower",
@@ -383,7 +380,7 @@
       "rating": "8.3",
       "picture": {
         "poster": "https://assets.bigcartel.com/product_images/229492046/almostdead.jpg?auto=format&fit=max&h=1000&w=1000",
-        "liveImage": ""
+        "liveImage": "https://highergroundmusic.com/files/2019/08/RLP_0068.jpg"
       },
       "set": {
         "song1": "Alligator",
@@ -417,7 +414,7 @@
       "rating": "9.3",
       "picture": {
         "poster": "https://archive.org/download/jrad2022-07-08.cmc621.cmc64.sbd.matrix.flac16/JRAD%202022%20Pittsburgh%20Poster%20Matte.jpg",
-        "liveImage": ""
+        "liveImage": "https://preview.redd.it/xd4g6yhu1rt01.jpg?width=640&crop=smart&auto=webp&s=8015e54443a3638cfd28dcc70a68e441968850ba"
       },
       "set": {
         "song1": "Jack Straw",
