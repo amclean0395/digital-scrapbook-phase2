@@ -3,15 +3,18 @@ import React, { useState } from "react";
 function ConcertForm({addConcert}){
 
     const [name, setName] = useState('')
+    const [date, setDate] = useState('')
     const [location, setLocation] = useState('')
     const [venue, setVenue] = useState('')
-    const [date, setDate] = useState('')
     const [rating, setRating] = useState('')
     const [poster, setPoster] = useState('')
     const [liveImage, setLiveImage] = useState('')
 
     const newConcert = {
+        name: name,
         date: date,
+        location: location,
+        venue: venue,
         rating: rating,
         picture: {
           poster: poster,

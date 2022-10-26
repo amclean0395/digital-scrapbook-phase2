@@ -2,7 +2,7 @@ import React from "react";
 import ConcertCard from "./ConcertCard";
 import Search from "./Search";
 
-function ConcertList({concerts, searchBoxValue, setSearchBoxValue}){
+function ConcertList({handleDelete, concerts, searchBoxValue, setSearchBoxValue}){
     
     const concertCard = concerts.map((oneConcert) => (
         <ConcertCard 
@@ -17,7 +17,7 @@ function ConcertList({concerts, searchBoxValue, setSearchBoxValue}){
         
     return (
         <div>
-            <Search searchBoxValue={searchBoxValue} setSearchBoxValue={setSearchBoxValue}/>
+            <Search searchBoxValue={searchBoxValue} setSearchBoxValue={setSearchBoxValue} handleDelete={handleDelete}/>
             {concertCard}
         </div>
     )
