@@ -22,21 +22,21 @@ function ConcertCard({id, name, location, venue, date, rating, picture, handleDe
 
     return(
         <li className="cards">
-            <h4>{name}</h4>
+            <h2>{name}</h2>
             <div className="image">
                 {shownImage ? (
-                    <img onClick={handlePictureSide} src={picture.poster} alt="OH NO!" />
+                    <img className = "poster" onClick={handlePictureSide} src={picture.poster} alt="OH NO!" />
                 ) : (
-                    <img onClick={handlePictureSide} src={picture.liveImage} alt="oh no!" />
+                    <img className= "poster" onClick={handlePictureSide} src={picture.liveImage} alt="oh no!" />
                 )}
             </div>
-            <h1>{location}</h1>
-            <h1>{venue}</h1>
-            <h4>{date}</h4>
-            <h4>{rating}</h4>
+            <p className="locationText">{location}</p>
+            <p className="locationText">{venue}</p>
+            <p className="locationText">{date}</p>
+            <p className="locationText">{rating}</p>
             <button className = {starColor ? "emoji-button favorite active" : "emoji-button favorite"}
             onClick={handleFavorite}> {starColor ? "★" :"☆"} </button>
-            <button onClick={handleDeleteShow}>Delete</button>
+            <button className="deleteButton" onClick={handleDeleteShow}>Delete</button>
         </li>
     )
 }
