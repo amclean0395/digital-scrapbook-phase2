@@ -11,12 +11,27 @@ function App() {
 
   const [concerts, setConcerts] = useState([])
   const [searchBoxValue, setSearchBoxValue] = useState('')
+  const [concerts2, setConcerts2] = useState([])
+  const [searchBoxValue2, setSearchBoxValue2] = useState('')
+
+  
 
   useEffect(() => {
     fetch('http://localhost:3001/concerts/')
     .then((r) => r.json())
     .then((oneConcert)=> setConcerts(oneConcert))
   }, [])
+
+  
+
+  useEffect(() => {
+    fetch('http://localhost:3001/concerts/')
+    .then((r) => r.json())
+    .then((oneConcert)=> setConcerts2(oneConcert))
+  }, [])
+
+
+
 
   const displayedConcerts = concerts.filter((oneConcert) => 
     oneConcert.set.song1.toLowerCase().includes(searchBoxValue.toLowerCase())
@@ -41,6 +56,10 @@ function App() {
     || oneConcert.set.song20.toLowerCase().includes(searchBoxValue.toLowerCase())
   )
 
+  const displayedConcerts2 = concerts2.filter((oneConcert) => 
+    oneConcert.name.toLowerCase().includes(searchBoxValue2.toLowerCase())
+  )
+
   function addConcert(newConcert){
     const updatedConcertArray = [...concerts, newConcert]
     setConcerts(updatedConcertArray)
@@ -50,11 +69,32 @@ function App() {
     <div className="appHeader">
         <Header />
         <Routes>
-          <Route path="/ConcertForm" element={<ConcertForm addConcert={addConcert}/>}/>
-          <Route path="/ConcertList" element={<ConcertList 
-          searchBoxValue={searchBoxValue} setSearchBoxValue={setSearchBoxValue} concerts={displayedConcerts}
-          concert={concerts} setConcerts={setConcerts}/>}/>
-          <Route path="/" element={<Home />}/>
+
+          <Route path="/ConcertForm" element={
+          <ConcertForm addConcert={addConcert}
+          />
+          }
+          />
+
+          <Route path="/ConcertList" element={
+          <ConcertList 
+            searchBoxValue={searchBoxValue} 
+            setSearchBoxValue={setSearchBoxValue} 
+            concerts={displayedConcerts}
+            setConcerts={setConcerts}
+          />
+          }
+          />
+
+          <Route path="/" element={
+          <Home 
+            displayedConcerts2={displayedConcerts2} 
+            setSearchBoxValue2={setSearchBoxValue2} 
+            searchBoxValue2={searchBoxValue2}
+          />
+          } 
+          />
+
           <Route path="/ConcertList/:id" element={<SetList/>}/>
         </Routes>
     </div>

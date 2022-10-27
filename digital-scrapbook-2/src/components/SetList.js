@@ -12,13 +12,50 @@ function SetList(){
         .then(data => setList(data))
     }, [parameters.id])
 
-    const {name, date, location, venue} = list
-    // add in "", set" after "venue"^^
+    const {name, date, location, venue, set} = list
     
-    // const {song1, song2, song3, song4, song5, 
-    //         song6, song7, song8, song9, song10, 
-    //         song11, song12, song13, song14, song15, 
-    //         song16, song17, song18, song19, song20} = set
+    // const noEmptys = () =>{
+    //     if(set.song18 != ""){
+    //         return (
+    //             <div>No Song.</div>
+    //         )
+    //     }
+    //     else {
+    //         return null
+    //     }
+    // } 
+
+    const  noUndefined = () => {
+        if(set != null){
+            return (
+                <div>
+                    <li>{set.song1}</li>
+                    <li>{set.song2}</li>
+                    <li>{set.song3}</li>
+                    <li>{set.song4}</li>
+                    <li>{set.song5}</li>
+                    <li>{set.song6}</li>
+                    <li>{set.song7}</li>
+                    <li>{set.song8}</li>
+                    <li>{set.song9}</li>
+                    <li>{set.song10}</li>
+                    <li>{set.song11}</li>
+                    <li>{set.song12}</li>
+                    <li>{set.song13}</li>
+                    <li>{set.song14}</li>
+                    <li>{set.song15}</li>
+                    <li>{set.song16}</li>
+                    <li>{set.song17}</li>
+                    <li>{set.song18}</li>
+                    <li>{set.song19}</li>
+                    <li>{set.song20}</li>
+                </div>
+            )
+        }
+        else {
+            return null
+        }
+    }
  
     return(
         <div id="setListBundle">
@@ -31,26 +68,7 @@ function SetList(){
                 <p>Venue: {venue}</p>
             </ul>
             <ol>
-                {/*<li>{song1}</li>
-                <li>{song2}</li>
-                <li>{song3}</li>
-                <li>{song4}</li>
-                <li>{song5}</li>
-                <li>{song6}</li>
-                <li>{song7}</li>
-                <li>{song8}</li>
-                <li>{song9}</li>
-                <li>{song10}</li>
-                <li>{song11}</li>
-                <li>{song12}</li>
-                <li>{song13}</li>
-                <li>{song14}</li>
-                <li>{song15}</li>
-                <li>{song16}</li>
-                <li>{song17}</li>
-                <li>{song18}</li>
-                <li>{song19}</li>
-                <li>{song20}</li> */}
+                {noUndefined()}
             </ol>
         </div>
     )

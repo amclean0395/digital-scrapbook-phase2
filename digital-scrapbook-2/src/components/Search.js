@@ -5,7 +5,7 @@ function Search({searchBoxValue, setSearchBoxValue}){
         <div className="input-field">
             <input 
                 type="text"
-                placeholder="Search any Song"
+                placeholder="Search by song name"
                 value={(searchBoxValue)}
                 onChange={(e) => setSearchBoxValue(e.target.value)}
             />  

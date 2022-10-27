@@ -2,10 +2,10 @@ import React from "react";
 import ConcertCard from "./ConcertCard";
 import Search from "./Search";
 
-function ConcertList({concert, setConcerts, concerts, searchBoxValue, setSearchBoxValue}){
+function ConcertList({setConcerts, concerts, searchBoxValue, setSearchBoxValue}){
     
     function handleDelete(id) {
-        const newConcertList = concert.filter((oneConcert) => 
+        const newConcertList = concerts.filter((oneConcert) => 
         oneConcert.id !== id)
         setConcerts(newConcertList)
       }

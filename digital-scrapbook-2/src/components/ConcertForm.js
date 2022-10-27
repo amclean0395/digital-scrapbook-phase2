@@ -250,7 +250,7 @@ function ConcertForm({addConcert}){
                 />
                 <br/>
                 <button>Submit</button>
-                <button><NavLink to="/ConcertList">Go to My Concerts</NavLink></button>
+                <button><NavLink to="/ConcertList">Take Me To My Concerts</NavLink></button>
             </form>
         </div>
     )
