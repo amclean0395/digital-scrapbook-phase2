@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {NavLink} from "react-router-dom"
-//import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom"
 
 function ConcertForm({addConcert}){
 
-    // const history = useNavigate()
+    //const history = useNavigate()
 
     const [name, setName] = useState('')
     const [date, setDate] = useState('')
@@ -80,179 +80,188 @@ function ConcertForm({addConcert}){
         })
         .then((r) => r.json())
         .then((newConcert) => addConcert(newConcert))
+        //.then((newConcert) => {history(`/ConcertList/${newConcert.id}`)})
     }
 
     return(
-        <div>
             <form onSubmit={handleSubmit}  className="uiForm">
                 <h1 className="formHeader">Input your concerts here</h1>
-                <label className="inputTitles">Band Name:</label>
-                <input 
-                    className="submitAreas"
-                    value = {name} 
-                    onChange={(e) => setName(e.target.value)} 
-                    placeholder="Ex. Dark Star Orchestra"
-                    name="name"
-                    
-                />
-                <label className="inputTitles">Date:</label>
-                <input 
-                    className="submitAreas"
-                    onChange={(e) => setDate(e.target.value)} 
-                    name="date"
-                    //type="date"
-                    placeholder="Ex. 03/11/1995"
-                />
-                <label className="inputTitles">Location:</label>
-                <input 
-                    className="submitAreas"
-                    value = {location} 
-                    onChange={(e) => setLocation(e.target.value)} 
-                    placeholder="Ex. Boulder, CO"
-                    name="name"
-                />
-                <label className="inputTitles">Venue:</label>
-                <input 
-                    className="submitAreas"
-                    value = {venue} 
-                    onChange={(e) => setVenue(e.target.value)} 
-                    placeholder="Ex. Folsom Field"
-                    name="name"
-                />
-                <label className="inputTitles">Rating:</label>
-                <input 
-                    value = {rating} 
-                    className="submitAreas"
-                    onChange={(e) => setRating(e.target.valueAsNumber)}  
-                    type="number" 
-                    name="rating" 
-                    placeholder="Ex. 9.5, 8.3"
-                    step="0.1" 
-                />
-                <label className="inputTitles">Concert Poster:</label>
-                <input
-                    value = {poster}
-                    className="submitAreas"
-                    onChange={(e) => setPoster(e.target.value)}
-                    label="Front Image URL"
-                    placeholder="Ex. https://iamawebsite.com/...."
-                    name="frontUrl"
-                />
-                <label className="inputTitles">Picture From The Show:</label>
-                <input
-                    value={liveImage}
-                    className="submitAreas"
-                    onChange={(e) => setLiveImage(e.target.value)}
-                    label="Back Image URL"
-                    placeholder="Ex. https://iamawebsite.com/...."
-                    name="backUrl"
-                />
-                <label>Input Set-list!</label>
-                <input 
-                    value={song1} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong1(e.target.value)}
-                />
-                <input 
-                    value={song2} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong2(e.target.value)}
-                />
-                <input 
-                    value={song3} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong3(e.target.value)}
-                />
-                <input 
-                    value={song4} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong4(e.target.value)}
-                />
-                <input 
-                    value={song5} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong5(e.target.value)}
-                />
-                <input 
-                    value={song6} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong6(e.target.value)}
-                />
-                <input 
-                    value={song7} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong7(e.target.value)}
-                />
-                <input 
-                    value={song8} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong8(e.target.value)}
-                />
-                <input 
-                    value={song9} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong9(e.target.value)}
-                />
-                <input 
-                    value={song10} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong10(e.target.value)}
-                />
-                <input 
-                    value={song11} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong11(e.target.value)}
-                />
-                <input 
-                    value={song12} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong12(e.target.value)}
-                />
-                <input 
-                    value={song13} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong13(e.target.value)}
-                />
-                <input 
-                    value={song14} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong14(e.target.value)}
-                />
-                <input 
-                    value={song15} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong15(e.target.value)}
-                />
-                <input 
-                    value={song16} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong16(e.target.value)}
-                />
-                <input 
-                    value={song17} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong17(e.target.value)}
-                />
-                <input 
-                    value={song18} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong18(e.target.value)}
-                />
-                <input 
-                    value={song19} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong19(e.target.value)}
-                />
-                <input 
-                    value={song20} 
-                    className="setlistInput" 
-                    onChange={(e) => setSong20(e.target.value)}
-                />
-                <br/>
+              <div id="container"> 
+                <div>
+                    <label className="inputTitles">Band Name:</label>
+                    <input 
+                        className="submitAreas"
+                        value = {name} 
+                        onChange={(e) => setName(e.target.value)} 
+                        placeholder="Ex. Dark Star Orchestra"
+                        name="name"
+                        
+                    />
+                    <label className="inputTitles">Date:</label>
+                    <input 
+                        className="submitAreas"
+                        onChange={(e) => setDate(e.target.value)} 
+                        name="date"
+                        //type="date"
+                        placeholder="Ex. November 24th, 2015"
+                    />
+                    <label className="inputTitles">Location:</label>
+                    <input 
+                        className="submitAreas"
+                        value = {location} 
+                        onChange={(e) => setLocation(e.target.value)} 
+                        placeholder="Ex. Boulder, CO"
+                        name="name"
+                    />
+                    <label className="inputTitles">Venue:</label>
+                    <input 
+                        className="submitAreas"
+                        value = {venue} 
+                        onChange={(e) => setVenue(e.target.value)} 
+                        placeholder="Ex. Folsom Field"
+                        name="name"
+                    />
+                    <label className="inputTitles">Rating:</label>
+                    <input 
+                        max={"10"}
+                        value = {rating} 
+                        className="submitAreas"
+                        onChange={(e) => setRating(e.target.valueAsNumber)}  
+                        type="number" 
+                        name="rating" 
+                        placeholder="Ex. 9.5, 8.3"
+                        step="0.1" 
+                    />
+                    <label className="inputTitles">Concert Poster:</label>
+                    <input
+                        value = {poster}
+                        className="submitAreas"
+                        onChange={(e) => setPoster(e.target.value)}
+                        label="Front Image URL"
+                        placeholder="Ex. https://iamawebsite.com/...."
+                        name="frontUrl"
+                    />
+                    <label className="inputTitles">Picture From The Show:</label>
+                    <input
+                        value={liveImage}
+                        className="submitAreas"
+                        onChange={(e) => setLiveImage(e.target.value)}
+                        label="Back Image URL"
+                        placeholder="Ex. https://iamawebsite.com/...."
+                        name="backUrl"
+                    />
+                </div>
+                
+                <div>  
+                <label>First Set</label>
+                    <input 
+                        value={song1} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong1(e.target.value)}
+                    />
+                    <input 
+                        value={song2} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong2(e.target.value)}
+                    />
+                    <input 
+                        value={song3} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong3(e.target.value)}
+                    />
+                    <input 
+                        value={song4} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong4(e.target.value)}
+                    />
+                    <input 
+                        value={song5} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong5(e.target.value)}
+                    />
+                    <input 
+                        value={song6} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong6(e.target.value)}
+                    />
+                    <input 
+                        value={song7} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong7(e.target.value)}
+                    />
+                    <input 
+                        value={song8} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong8(e.target.value)}
+                    />
+                    <input 
+                        value={song9} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong9(e.target.value)}
+                    />
+                    <input 
+                        value={song10} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong10(e.target.value)}
+                    />
+                </div>    
+                <div>
+                    <label>Second Set</label>
+                    <input 
+                        value={song11} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong11(e.target.value)}
+                    />
+                    <input 
+                        value={song12} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong12(e.target.value)}
+                    />
+                    <input 
+                        value={song13} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong13(e.target.value)}
+                    />
+                    <input 
+                        value={song14} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong14(e.target.value)}
+                    />
+                    <input 
+                        value={song15} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong15(e.target.value)}
+                    />
+                    <input 
+                        value={song16} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong16(e.target.value)}
+                    />
+                    <input 
+                        value={song17} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong17(e.target.value)}
+                    />
+                    <input 
+                        value={song18} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong18(e.target.value)}
+                    />
+                    <input 
+                        value={song19} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong19(e.target.value)}
+                    />
+                    <input 
+                        value={song20} 
+                        className="setlistInput" 
+                        onChange={(e) => setSong20(e.target.value)}
+                    />
+                </div>
+              </div>   
                 <button>Submit</button>
                 <button><NavLink to="/ConcertList">Take Me To My Concerts</NavLink></button>
             </form>
-        </div>
     )
 }
 

@@ -1,3 +1,7 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 nav a.active {
   background-color: black;
@@ -15,9 +19,21 @@ nav a.active {
   margin: 1rem 2rem;
   box-shadow: 5px 5px #e04b52;
   color: white;
+  height: fit-content;
+  width: fit-content;
+  background: rgba(39, 16, 167, 0.778)
+  
 }
 
-.uiForm {
+#nasty{
+  text-align: center
+}
+
+.cardButtons{
+  margin: ;
+}
+
+/* .uiForm {
   border: 2px solid black;
   text-align: center;
   padding: 1rem;
@@ -25,7 +41,8 @@ nav a.active {
   height: 25rem;
   display: inline-grid;
   margin: 1rem 2rem;
-}
+  margin-left: 38%;
+} */
 
 .submitAreas{
   border: 1px solid black;
@@ -33,22 +50,36 @@ nav a.active {
 }
 
 .poster {
-  max-width: 100px;
-  max-height: 200px;
+  width: 225px;
+  height: 300px;
 }
 
 .crowd{
-  max-width: 200px;
-  max-width: 300;
+  max-height: 225px;
+  max-width: 300px;
 }
 
-.header {
+#header {
   padding: 15px;
-  text-align: center;
+  text-align:unset;
   background: #1abc9c;
   color: white;
   font-size: 15px;
+  padding: 5px;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  
 }
+
+.Links{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  
+}
+
+
 
 body {
   background-image: url("https://wallpaperset.com/w/full/3/a/7/58818.jpg")
@@ -60,4 +91,24 @@ body {
 
 #setListBundle{
   color: white
+}
+
+.column{
+  text-align: center;
+  color:white
+}
+
+.Videos{
+  text-align: center;
+}
+
+#container{
+  display: flex;
+  margin: 10px;
+}
+
+#container div {
+  background-color: #1abc9c;
+
+
 }

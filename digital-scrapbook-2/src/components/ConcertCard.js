@@ -26,7 +26,7 @@ function ConcertCard({id, name, location, venue, date, rating, picture, handleDe
                     <img className = "crowd" onClick={handleFlip} src={picture.liveImage} alt="Error Loading Media"/>
                 )}
             </div>
-            <ul>
+            <ul id="nasty">
                 <p className="cardText">Location: {location}</p>
                 <p className="cardText">Venue: {venue}</p>
                 <p className="cardText">Date: {date}</p>

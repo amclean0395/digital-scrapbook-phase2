@@ -5,6 +5,7 @@ import Home from './Home'
 import Header from './Header'
 import SetList from './SetList';
 import {Routes, Route} from "react-router-dom"
+import Media from './Media';
 
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
   )
 
   const displayedConcerts2 = concerts2.filter((oneConcert) => 
-    oneConcert.name.toLowerCase().includes(searchBoxValue2.toLowerCase())
+    oneConcert.date.toLowerCase().includes(searchBoxValue2.toLowerCase())
   )
 
   function addConcert(newConcert){
@@ -96,6 +97,8 @@ function App() {
           />
 
           <Route path="/ConcertList/:id" element={<SetList/>}/>
+
+          <Route path="/Media" element={<Media />}/>
         </Routes>
     </div>
   );
