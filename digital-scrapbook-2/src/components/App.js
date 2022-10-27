@@ -55,7 +55,7 @@ function App() {
           searchBoxValue={searchBoxValue} setSearchBoxValue={setSearchBoxValue} concerts={displayedConcerts}
           concert={concerts} setConcerts={setConcerts}/>}/>
           <Route path="/" element={<Home />}/>
-          <Route path="/ConcertList/:id" element={<SetList />}/>
+          <Route path="/ConcertList/:id" element={<SetList/>}/>
         </Routes>
     </div>
   );

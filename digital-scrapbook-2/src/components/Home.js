@@ -4,7 +4,7 @@ function Home(){
     return (
         <div id="home">
             <h1>
-                Andy's Home Page!
+                Andy's Home Page! 
             </h1>
         </div>
     )

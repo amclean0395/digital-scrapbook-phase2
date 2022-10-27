@@ -26,12 +26,14 @@ function ConcertCard({id, name, location, venue, date, rating, picture, handleDe
                     <img className = "crowd" onClick={handleFlip} src={picture.liveImage} alt="Error Loading Media"/>
                 )}
             </div>
-            <p className="cardText">Location: {location}</p>
-            <p className="cardText">Venue: {venue}</p>
-            <p className="cardText">Date: {date}</p>
-            <p className="cardText">Rating: {rating}</p>
-            <button className="deleteButton" onClick={handleDeleteShow}>Remove Show</button>
-            <NavLink to={`/ConcertList/${id}`} >View Set-list</NavLink>
+            <ul>
+                <p className="cardText">Location: {location}</p>
+                <p className="cardText">Venue: {venue}</p>
+                <p className="cardText">Date: {date}</p>
+                <p className="cardText">Rating: {rating}</p>
+                <button className="cardButtons" onClick={handleDeleteShow}>Remove Show</button>
+                <button className="cardButtons"><NavLink to={`/ConcertList/${id}`} >View Set-list</NavLink></button>
+            </ul>
         </div>
     )
 }

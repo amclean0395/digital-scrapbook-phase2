@@ -1,5 +1,4 @@
-{
-  "concerts": [
+"concerts": [
     {
       "id": 1,
       "name": "Dead & Company",
@@ -28,7 +27,7 @@
         "song14": "Drums & Space",
         "song15": "Black Peter",
         "song16": "Good Lovin'",
-        "song17": "Touch of Grey"
+        "song17": "Touch of Grey"       
       }
     },
     {

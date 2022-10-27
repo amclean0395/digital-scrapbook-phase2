@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import {NavLink} from "react-router-dom"
+//import { useNavigate } from "react-router-dom";
 
 function ConcertForm({addConcert}){
+
+    // const history = useNavigate()
 
     const [name, setName] = useState('')
     const [date, setDate] = useState('')
@@ -81,7 +85,7 @@ function ConcertForm({addConcert}){
     return(
         <div>
             <form onSubmit={handleSubmit}  className="uiForm">
-                <h1>Input your concerts here</h1>
+                <h1 className="formHeader">Input your concerts here</h1>
                 <label className="inputTitles">Band Name:</label>
                 <input 
                     className="submitAreas"
@@ -246,6 +250,7 @@ function ConcertForm({addConcert}){
                 />
                 <br/>
                 <button>Submit</button>
+                <button><NavLink to="/ConcertList">Go to My Concerts</NavLink></button>
             </form>
         </div>
     )
