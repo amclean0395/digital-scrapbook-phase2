@@ -3,7 +3,7 @@ import React from "react";
 function Search2({searchBoxValue2, setSearchBoxValue2}){
     return(
         <div className="new">
-            <label className="searchDate">Search By Date: </label>
+            <label className="searchDate">Search By Any Category: </label>
             <input 
                 className="searchDate"
                 type="text"

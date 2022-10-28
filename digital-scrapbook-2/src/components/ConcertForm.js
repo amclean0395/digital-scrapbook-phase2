@@ -274,7 +274,7 @@ function ConcertForm({addConcert, addConcert2}){
             <div id="formButtons">
                 <button className="formButtons">Submit</button>
                
-                <button className="formButtons"><NavLink className="formBut" to="/List">Direct to List</NavLink></button>
+                <button className="formButtons"><NavLink className="formBut" to="/List">View List</NavLink></button>
             </div>
         </form>
     )
