@@ -2,7 +2,7 @@ import React from "react";
 
 function Media(){
     return (
-       <div>
+       <div className="vidContainer">
             <div className="Videos"> 
                 <h2>Dead & Company | Boulder, Colorado </h2>
                 <iframe className="vid" width="560" height="315" src="https://www.youtube.com/embed/QJSGPSmhVDA" title="YouTube video player" frameBorder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

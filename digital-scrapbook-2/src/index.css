@@ -117,6 +117,7 @@ form{
   margin: auto;
   padding: 1px;
   border-radius: 3px;
+  margin-top: 10px;
 
 }
 
@@ -144,7 +145,7 @@ form{
 
 #setlistTable{
   padding: 5px;
-  width: 50%;
+  width: 280px;
   text-align: center;
   display: inline-grid;
 }
@@ -173,7 +174,8 @@ form{
 
 #container{
   display: flex;
-  margin: 10px;
+  margin: auto;
+  width: 700px;
 }
 
 .inputTitles{
@@ -242,7 +244,6 @@ th, td.columns, td{
 
 
 #setListBundle{
-    text-align:start;
     background: rgba(39, 16, 167, 0.778);
     border: yellow solid 3px;
     box-shadow: 7px 7px #369872;
@@ -253,8 +254,13 @@ th, td.columns, td{
     display: inline-grid;
     font-style: oblique;
     border-radius: 4px;
-    margin-left: 35%;
-    margin-right: auto;
+    margin:auto;
+   }
+
+
+.setText{
+  text-align:start;
+
 }
 
 .setlistButton{
@@ -274,10 +280,19 @@ th, td.columns, td{
   text-align: center;
 }
 
+#middle{
+  text-align: center;
+}
+
+
 
 
 .Videos {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px;
+  width: 700px;
 }
 
 .vid{

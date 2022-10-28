@@ -404,7 +404,7 @@
         "song16": "Wharf Rat",
         "song17": "Turn On Your Love Light",
         "song18": "Casey Jones",
-        "song19": "",
+        "song19": "Lost Sailor",
         "song20": ""
       }
     },
@@ -440,40 +440,6 @@
         "song18": "Morning Dew",
         "song19": "Terrapin Station",
         "song20": "One More Saturday Night"
-      }
-    },
-    {
-      "id": 14,
-      "name": "Joe Russo's Almost Dead",
-      "date": "June 18th, 2021",
-      "location": "Baltimore, MD",
-      "venue": "MECU Pavilion",
-      "rating": "8.3",
-      "picture": {
-        "poster": "https://assets.bigcartel.com/product_images/229492046/almostdead.jpg?auto=format&fit=max&h=1000&w=1000",
-        "liveImage": "https://highergroundmusic.com/files/2019/08/RLP_0068.jpg"
-      },
-      "set": {
-        "song1": "Alligator",
-        "song2": "St. Stephen",
-        "song3": "The Wheel",
-        "song4": "Row Jimmy",
-        "song5": "Good Lovin'",
-        "song6": "The Music Never Stopped",
-        "song7": "Help on the Way",
-        "song8": "Slipknot!",
-        "song9": "Feel Like a Stranger",
-        "song10": "Peggy-O",
-        "song11": "Franklin's Tower",
-        "song12": "Touch of Grey",
-        "song13": "Tonight I'll Be Staying Here With You",
-        "song14": "",
-        "song15": "",
-        "song16": "",
-        "song17": "",
-        "song18": "",
-        "song19": "",
-        "song20": ""
       }
     }
   ]

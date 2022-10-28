@@ -28,7 +28,7 @@ function SetList(){
     const  noUndefined = () => {
         if(set != null){
             return (
-                <div>
+                <div class="setText" >
                     <li>{set.song1}</li>
                     <li>{set.song2}</li>
                     <li>{set.song3}</li>
@@ -60,14 +60,14 @@ function SetList(){
     return(
         <div id="middle">
             <div id="setListBundle">
-                <h1 className="center">
+                <h2 className="center">
                     {name}
-                </h1>
-                <ul className="center">
+                </h2>
+                <div className="center">
                     <p>Date: {date}</p>
                     <p>City: {location}</p>
                     <p>Venue: {venue}</p>
-                </ul>
+                </div>
                 <ol>
                     {noUndefined()}
                     <button className="setlistButton"><NavLink className="finalTouch" to="/ConcertList">Return to Cards</NavLink></button>
