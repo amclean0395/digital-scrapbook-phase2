@@ -6,24 +6,28 @@ import Header from './Header'
 import SetList from './SetList';
 import {Routes, Route} from "react-router-dom"
 import Media from './Media';
+import About from './About';
 
 
 function App() {
 
   const [concerts, setConcerts] = useState([])
   const [searchBoxValue, setSearchBoxValue] = useState('')
-  const [concerts2, setConcerts2] = useState([])
-  const [searchBoxValue2, setSearchBoxValue2] = useState('')
-
   
-
   useEffect(() => {
     fetch('http://localhost:3001/concerts/')
     .then((r) => r.json())
     .then((oneConcert)=> setConcerts(oneConcert))
   }, [])
 
-  
+  function addConcert(newConcert){
+    const updatedConcertArray = [...concerts, newConcert]
+    setConcerts(updatedConcertArray)
+  }
+
+
+  const [concerts2, setConcerts2] = useState([])
+  const [searchBoxValue2, setSearchBoxValue2] = useState('')
 
   useEffect(() => {
     fetch('http://localhost:3001/concerts/')
@@ -31,7 +35,10 @@ function App() {
     .then((oneConcert)=> setConcerts2(oneConcert))
   }, [])
 
-
+  function addConcert2(newConcert){
+    const updatedConcertArray2 = [...concerts2, newConcert]
+    setConcerts2(updatedConcertArray2)
+  }
 
 
   const displayedConcerts = concerts.filter((oneConcert) => 
@@ -58,45 +65,51 @@ function App() {
   )
 
   const displayedConcerts2 = concerts2.filter((oneConcert) => 
-    oneConcert.date.toLowerCase().includes(searchBoxValue2.toLowerCase())
+    oneConcert.name.toLowerCase().includes(searchBoxValue2.toLowerCase())
+    || oneConcert.date.toLowerCase().includes(searchBoxValue2.toLowerCase())
+    || oneConcert.location.toLowerCase().includes(searchBoxValue2.toLowerCase())
+    || oneConcert.venue.toLowerCase().includes(searchBoxValue2.toLowerCase())
   )
 
-  function addConcert(newConcert){
-    const updatedConcertArray = [...concerts, newConcert]
-    setConcerts(updatedConcertArray)
-  }
+ 
 
   return (
     <div className="appHeader">
         <Header />
+        <br></br>
         <Routes>
 
           <Route path="/ConcertForm" element={
-          <ConcertForm addConcert={addConcert}
+          <ConcertForm 
+            addConcert={addConcert}
+            addConcert2={addConcert2}
           />
           }
           />
 
           <Route path="/ConcertList" element={
           <ConcertList 
+            concerts={displayedConcerts}
             searchBoxValue={searchBoxValue} 
             setSearchBoxValue={setSearchBoxValue} 
-            concerts={displayedConcerts}
             setConcerts={setConcerts}
           />
           }
           />
 
-          <Route path="/" element={
+          <Route path="/List" element={
           <Home 
             displayedConcerts2={displayedConcerts2} 
             setSearchBoxValue2={setSearchBoxValue2} 
             searchBoxValue2={searchBoxValue2}
+            setConcerts2={setConcerts2}
           />
           } 
           />
 
           <Route path="/ConcertList/:id" element={<SetList/>}/>
+
+          <Route path="/" element={<About />}/>
 
           <Route path="/Media" element={<Media />}/>
         </Routes>

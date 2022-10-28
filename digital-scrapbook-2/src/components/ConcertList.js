@@ -25,7 +25,7 @@ function ConcertList({setConcerts, concerts, searchBoxValue, setSearchBoxValue})
     ))
         
     return (
-        <div>
+        <div id="cardContainer">
             <Search searchBoxValue={searchBoxValue} setSearchBoxValue={setSearchBoxValue}/>
             {concertCard}
         </div>

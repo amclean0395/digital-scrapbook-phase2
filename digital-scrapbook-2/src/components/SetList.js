@@ -58,20 +58,22 @@ function SetList(){
     }
  
     return(
-        <div id="setListBundle">
-            <h1>
-                {name}
-            </h1>
-            <ul>
-                <p>Date: {date}</p>
-                <p>City: {location}</p>
-                <p>Venue: {venue}</p>
-            </ul>
-            <ol>
-                {noUndefined()}
-                <button><NavLink to="/ConcertList">Return to My Concerts</NavLink></button>
-            </ol>
-        </div>
+        <div id="middle">
+            <div id="setListBundle">
+                <h1 className="center">
+                    {name}
+                </h1>
+                <ul className="center">
+                    <p>Date: {date}</p>
+                    <p>City: {location}</p>
+                    <p>Venue: {venue}</p>
+                </ul>
+                <ol>
+                    {noUndefined()}
+                    <button className="setlistButton"><NavLink className="finalTouch" to="/ConcertList">Return to Cards</NavLink></button>
+                </ol>
+            </div>
+        </div>    
     )
 }
 

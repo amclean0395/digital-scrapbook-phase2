@@ -18,7 +18,7 @@ function ConcertCard({id, name, location, venue, date, rating, picture, handleDe
 
     return(
         <div className="cards">
-            <h2>{name}</h2>
+            <h3>{name}</h3>
             <div className="image">
                 {shownImage ? (
                     <img className = "poster" onClick={handleFlip} src={picture.poster} alt="Error Loading Media" />
@@ -26,14 +26,14 @@ function ConcertCard({id, name, location, venue, date, rating, picture, handleDe
                     <img className = "crowd" onClick={handleFlip} src={picture.liveImage} alt="Error Loading Media"/>
                 )}
             </div>
-            <ul id="nasty">
+            <div id="nasty">
                 <p className="cardText">Location: {location}</p>
                 <p className="cardText">Venue: {venue}</p>
                 <p className="cardText">Date: {date}</p>
                 <p className="cardText">Rating: {rating}</p>
-                <button className="cardButtons" onClick={handleDeleteShow}>Remove Show</button>
-                <button className="cardButtons"><NavLink to={`/ConcertList/${id}`} >View Set-list</NavLink></button>
-            </ul>
+                <button className="deleteButtons" onClick={handleDeleteShow}>Remove Show</button>
+                <button className="navButtons"><NavLink className="navButtons" to={`/ConcertList/${id}`} >View Set-list</NavLink></button>
+            </div>
         </div>
     )
 }

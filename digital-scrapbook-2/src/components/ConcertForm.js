@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {NavLink} from "react-router-dom"
 //import { useNavigate } from "react-router-dom"
 
-function ConcertForm({addConcert}){
+function ConcertForm({addConcert, addConcert2}){
 
     //const history = useNavigate()
 
@@ -69,6 +69,20 @@ function ConcertForm({addConcert}){
 
     }    
 
+    function  handleSubmit2(e){
+        e.preventDefault()
+        fetch('http://localhost:3001/concerts', {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify(newConcert)
+        })
+        .then((r) => r.json())
+        .then((newConcert) => addConcert2(newConcert))
+        //.then((newConcert) => {history(`/ConcertList/${newConcert.id}`)})
+    }
+
     function  handleSubmit(e){
         e.preventDefault()
         fetch('http://localhost:3001/concerts', {
@@ -83,11 +97,12 @@ function ConcertForm({addConcert}){
         //.then((newConcert) => {history(`/ConcertList/${newConcert.id}`)})
     }
 
+ 
+
     return(
-            <form onSubmit={handleSubmit}  className="uiForm">
-                <h1 className="formHeader">Input your concerts here</h1>
-              <div id="container"> 
-                <div>
+        <form onSubmit={handleSubmit} onSubmit={handleSubmit2} >
+            <div id="container"> 
+                <div id="basicTable">
                     <label className="inputTitles">Band Name:</label>
                     <input 
                         className="submitAreas"
@@ -121,7 +136,7 @@ function ConcertForm({addConcert}){
                         placeholder="Ex. Folsom Field"
                         name="name"
                     />
-                    <label className="inputTitles">Rating:</label>
+                    <label className="inputTitles">Rating /10: </label>
                     <input 
                         max={"10"}
                         value = {rating} 
@@ -129,7 +144,7 @@ function ConcertForm({addConcert}){
                         onChange={(e) => setRating(e.target.valueAsNumber)}  
                         type="number" 
                         name="rating" 
-                        placeholder="Ex. 9.5, 8.3"
+                        placeholder="ex. 9.5, 8.3"
                         step="0.1" 
                     />
                     <label className="inputTitles">Concert Poster:</label>
@@ -138,22 +153,22 @@ function ConcertForm({addConcert}){
                         className="submitAreas"
                         onChange={(e) => setPoster(e.target.value)}
                         label="Front Image URL"
-                        placeholder="Ex. https://iamawebsite.com/...."
+                        placeholder="ex. https://iamawebsite.com/...."
                         name="frontUrl"
                     />
-                    <label className="inputTitles">Picture From The Show:</label>
+                    <label className="inputTitles">Concert Picture:</label>
                     <input
                         value={liveImage}
                         className="submitAreas"
                         onChange={(e) => setLiveImage(e.target.value)}
                         label="Back Image URL"
-                        placeholder="Ex. https://iamawebsite.com/...."
+                        placeholder="ex. https://iamawebsite.com/...."
                         name="backUrl"
                     />
                 </div>
                 
-                <div>  
-                <label>First Set</label>
+                <div id="setlistTable">  
+                <label>Set-List:</label>
                     <input 
                         value={song1} 
                         className="setlistInput" 
@@ -204,9 +219,6 @@ function ConcertForm({addConcert}){
                         className="setlistInput" 
                         onChange={(e) => setSong10(e.target.value)}
                     />
-                </div>    
-                <div>
-                    <label>Second Set</label>
                     <input 
                         value={song11} 
                         className="setlistInput" 
@@ -258,10 +270,13 @@ function ConcertForm({addConcert}){
                         onChange={(e) => setSong20(e.target.value)}
                     />
                 </div>
-              </div>   
-                <button>Submit</button>
-                <button><NavLink to="/ConcertList">Take Me To My Concerts</NavLink></button>
-            </form>
+            </div>   
+            <div id="formButtons">
+                <button className="formButtons">Submit</button>
+               
+                <button className="formButtons"><NavLink className="formBut" to="/List">Direct to List</NavLink></button>
+            </div>
+        </form>
     )
 }
 

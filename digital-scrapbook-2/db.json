@@ -36,6 +36,74 @@
     },
     {
       "id": 2,
+      "name": "Joe Russo's Almost Dead",
+      "date": "June 3rd, 2022",
+      "location": "Morrison, CO",
+      "venue": "Red Rocks",
+      "rating": "9.3",
+      "picture": {
+        "poster": "https://archive.org/download/jrad2022-07-08.cmc621.cmc64.sbd.matrix.flac16/JRAD%202022%20Pittsburgh%20Poster%20Matte.jpg",
+        "liveImage": "https://preview.redd.it/xd4g6yhu1rt01.jpg?width=640&crop=smart&auto=webp&s=8015e54443a3638cfd28dcc70a68e441968850ba"
+      },
+      "set": {
+        "song1": "Jack Straw",
+        "song2": "Althea",
+        "song3": "My Brother Esau",
+        "song4": "Help on the Way",
+        "song5": "Slipknot!",
+        "song6": "I've Seen a Face",
+        "song7": "Cumberland Blues",
+        "song8": "China Cat Sunflower",
+        "song9": "Brown Eyed Women",
+        "song10": "The Music Never Stopped",
+        "song11": "I'm Your Captain (Closer to Home)",
+        "song12": "Morning Dew",
+        "song13": "Shakedown Street",
+        "song14": "Weather Report Suite",
+        "song15": "Let It Grow",
+        "song16": "Shine On You Crazy Diamond (Parts I-V)",
+        "song17": "Sage and Spirit",
+        "song18": "Samson and Delilah",
+        "song19": "",
+        "song20": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "Dark Star Orchestra",
+      "date": "February 12th, 2022",
+      "location": "Denver, CO",
+      "venue": "Mission Ballroom",
+      "rating": "9.3",
+      "picture": {
+        "poster": "https://cdn.shopify.com/s/files/1/0637/7755/products/03A370D6-95D6-4525-8C8E-26D0B1EFB99A_1050x.jpg?v=1643826595",
+        "liveImage": "https://27eastmount.s3.amazonaws.com/2022/08/DSO-mission-02257.jpg"
+      },
+      "set": {
+        "song1": "Sugaree",
+        "song2": "Cassidy",
+        "song3": "Loser",
+        "song4": "New Minglewood Blues",
+        "song5": "Ramble On Rose",
+        "song6": "Me and My Uncle",
+        "song7": "Row Jimmy",
+        "song8": "It's All Over Now",
+        "song9": "Scarlet Begonias",
+        "song10": "Fire On the Mountain",
+        "song11": "Estimated Prophet",
+        "song12": "Bertha",
+        "song13": "The Music Never Stopped",
+        "song14": "Help On the Way",
+        "song15": "Slipknot!",
+        "song16": "Franklin's Tower",
+        "song17": "Around and Around",
+        "song18": "Going Down The Road Feeling Bad",
+        "song19": "Not Fade Away",
+        "song20": "One More Saturday Night"
+      }
+    },
+    {
+      "id": 4,
       "name": "Dead & Company",
       "date": "July 2nd, 2016",
       "location": "Boulder, CO",
@@ -69,7 +137,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 5,
       "name": "Dead & Company",
       "date": "July 13th, 2018",
       "location": "Boulder, CO",
@@ -103,7 +171,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 6,
       "name": "Dead & Company",
       "date": "July 14th, 2018",
       "location": "Boulder, CO",
@@ -137,7 +205,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 7,
       "name": "Dead & Company",
       "date": "July 5th, 2019",
       "location": "Boulder, CO",
@@ -171,7 +239,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 8,
       "name": "Dead & Company",
       "date": "August 20, 2021",
       "location": "Queens, NY",
@@ -205,7 +273,7 @@
       }
     },
     {
-      "id": 7,
+      "id": 9,
       "name": "Dead & Company",
       "date": "August 28th, 2021",
       "location": "Hershey, PA",
@@ -239,7 +307,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 10,
       "name": "Dead & Company",
       "date": "October 22rd, 2021",
       "location": "Greenwood Village, CO",
@@ -273,7 +341,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 11,
       "name": "Dead & Company",
       "date": "October 23rd, 2021",
       "location": "Greenwood Village, CO",
@@ -307,7 +375,7 @@
       }
     },
     {
-      "id": 10,
+      "id": 12,
       "name": "Dead & Company",
       "date": "June 17th, 2022",
       "location": "Boulder, CO",
@@ -341,7 +409,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 13,
       "name": "Dead & Company",
       "date": "June 18th, 2022",
       "location": "Boulder, CO",
@@ -375,7 +443,7 @@
       }
     },
     {
-      "id": 12,
+      "id": 14,
       "name": "Joe Russo's Almost Dead",
       "date": "June 18th, 2021",
       "location": "Baltimore, MD",
@@ -404,40 +472,6 @@
         "song16": "",
         "song17": "",
         "song18": "",
-        "song19": "",
-        "song20": ""
-      }
-    },
-    {
-      "id": 13,
-      "name": "Joe Russo's Almost Dead",
-      "date": "June 3rd, 2022",
-      "location": "Morrison, CO",
-      "venue": "Red Rocks Amphitheater",
-      "rating": "9.3",
-      "picture": {
-        "poster": "https://archive.org/download/jrad2022-07-08.cmc621.cmc64.sbd.matrix.flac16/JRAD%202022%20Pittsburgh%20Poster%20Matte.jpg",
-        "liveImage": "https://preview.redd.it/xd4g6yhu1rt01.jpg?width=640&crop=smart&auto=webp&s=8015e54443a3638cfd28dcc70a68e441968850ba"
-      },
-      "set": {
-        "song1": "Jack Straw",
-        "song2": "Althea",
-        "song3": "My Brother Esau",
-        "song4": "Help on the Way",
-        "song5": "Slipknot!",
-        "song6": "I've Seen a Face",
-        "song7": "Cumberland Blues",
-        "song8": "China Cat Sunflower",
-        "song9": "Brown Eyed Women",
-        "song10": "The Music Never Stopped",
-        "song11": "I'm Your Captain (Closer to Home)",
-        "song12": "Morning Dew",
-        "song13": "Shakedown Street",
-        "song14": "Weather Report Suite",
-        "song15": "Let It Grow",
-        "song16": "Shine On You Crazy Diamond (Parts I-V)",
-        "song17": "Sage and Spirit",
-        "song18": "Samson and Delilah",
         "song19": "",
         "song20": ""
       }
