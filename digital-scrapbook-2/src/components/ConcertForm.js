@@ -69,19 +69,19 @@ function ConcertForm({addConcert, addConcert2}){
 
     }    
 
-    function  handleSubmit2(e){
-        e.preventDefault()
-        fetch('http://localhost:3001/concerts', {
-            method: "POST",
-            headers: {
-                "Content-Type" : "application/json"
-            },
-            body: JSON.stringify(newConcert)
-        })
-        .then((r) => r.json())
-        .then((newConcert) => addConcert2(newConcert))
-        //.then((newConcert) => {history(`/ConcertList/${newConcert.id}`)})
-    }
+    // function  handleSubmit2(e){
+    //     e.preventDefault()
+    //     fetch('http://localhost:3001/concerts', {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type" : "application/json"
+    //         },
+    //         body: JSON.stringify(newConcert)
+    //     })
+    //     .then((r) => r.json())
+    //     .then((newConcert) => addConcert2(newConcert))
+    //     //.then((newConcert) => {history(`/ConcertList/${newConcert.id}`)})
+    // }
 
     function  handleSubmit(e){
         e.preventDefault()
@@ -100,7 +100,7 @@ function ConcertForm({addConcert, addConcert2}){
  
 
     return(
-        <form onSubmit={handleSubmit} onSubmit={handleSubmit2} >
+        <form onSubmit={handleSubmit} >
             <div id="container"> 
                 <div id="basicTable">
                     <label className="inputTitles">Band Name:</label>
@@ -274,7 +274,7 @@ function ConcertForm({addConcert, addConcert2}){
             <div id="formButtons">
                 <button className="formButtons">Submit</button>
                
-                <button className="formButtons"><NavLink className="formBut" to="/List">View List</NavLink></button>
+                <button className="formButtons"><NavLink className="formBut" to="/ConcertList">View Cards</NavLink></button>
             </div>
         </form>
     )

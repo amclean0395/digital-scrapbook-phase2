@@ -56,7 +56,7 @@ function SetList(){
             return null
         }
     }
- 
+
     return(
         <div id="middle">
             <div id="setListBundle">

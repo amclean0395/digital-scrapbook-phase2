@@ -6,7 +6,7 @@ function Header() {
         <div className="container2">
             <nav id="header">
                 <NavLink className="Links" to="/ConcertForm">Add a Concert</NavLink>
-                <NavLink className="Links" to="/List">List</NavLink>
+                {/* <NavLink className="Links" to="/List">List</NavLink> */}
                 <NavLink className="Links" to="/ConcertList">Cards</NavLink>
                 <NavLink className="Links" to="/Media">Videos</NavLink>
             </nav>
