@@ -275,6 +275,10 @@ th, td.columns, td{
   color:white
 }
 
+.description{
+  text-align: left;
+}
+
 #setListBundle h1 {
   text-align: center;
 }
